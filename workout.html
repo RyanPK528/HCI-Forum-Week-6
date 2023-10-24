@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fit-Life Tracker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Dashboard</a>
+    <a href="tracker.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tracker</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Workouts</a>
+    <a href="leaderboard.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Leaderboard</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Dashboard</a>
+    <a href="tracker.html" class="w3-bar-item w3-button w3-padding-large">Tracker</a>
+    <a href="leaderboard.html" class="w3-bar-item w3-button w3-padding-large">Leaderboard</a>
+  </div>
+</div>
+
+<div class="w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Fit-Life Workout Weekly Plan</h1>
+        <h5 class="w3-padding-32 w3-large">It's time to burn some calories! Fit-Life has created a weekly workout plan specially made just for you based on the data you have given us. Simply complete the assigned exercises any time during the week and you will be able to gain Fit-points. Gather as much Fit-points as you can and climb up the Fit-Leaderboard to get real-life rewards such as vouchers and merchandises!<br> Keep in mind that the workout plan will refresh every week. </h5>
+
+        <h3> Monday:</h3>
+        <table class="w3-table-all w3-card-4 w3-hoverable">
+            <thead>
+                <tr class="w3-light-grey">
+                      <th>Exercise</th>
+                      <th>No. of Sets</th>
+                      <th>No. of Reps</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Dumbbell Bench Press</td>
+                <td>5</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Bench Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Floor Press</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Standing Dumbbell Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Lateral Raise</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Tricep Kickback</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+        </table>
+        <br>
+        <h3> Tuesday:</h3>
+        <table class="w3-table-all w3-card-4 w3-hoverable">
+            <thead>
+                <tr class="w3-light-grey">
+                      <th>Exercise</th>
+                      <th>No. of Sets</th>
+                      <th>No. of Reps</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Dumbbell Bench Press</td>
+                <td>5</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Bench Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Floor Press</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Standing Dumbbell Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Lateral Raise</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Tricep Kickback</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+        </table>
+        <br>
+        <h3> Wednesday:</h3>
+        <table class="w3-table-all w3-card-4 w3-hoverable">
+            <thead>
+                <tr class="w3-light-grey">
+                      <th>Exercise</th>
+                      <th>No. of Sets</th>
+                      <th>No. of Reps</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Dumbbell Bench Press</td>
+                <td>5</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Bench Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Floor Press</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Standing Dumbbell Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Lateral Raise</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Tricep Kickback</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+        </table>
+        <br>
+        <h3> Thursday:</h3>
+        <table class="w3-table-all w3-card-4 w3-hoverable">
+            <thead>
+                <tr class="w3-light-grey">
+                      <th>Exercise</th>
+                      <th>No. of Sets</th>
+                      <th>No. of Reps</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Dumbbell Bench Press</td>
+                <td>5</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Bench Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Floor Press</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Standing Dumbbell Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Lateral Raise</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Tricep Kickback</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+        </table>
+        <br>
+        <h3> Friday:</h3>
+        <table class="w3-table-all w3-card-4 w3-hoverable">
+            <thead>
+                <tr class="w3-light-grey">
+                      <th>Exercise</th>
+                      <th>No. of Sets</th>
+                      <th>No. of Reps</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Dumbbell Bench Press</td>
+                <td>5</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Incline Dumbbell Bench Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Floor Press</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Standing Dumbbell Press</td>
+                <td>4</td>
+                <td>8-10</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Lateral Raise</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+            <tr>
+                <td>Dumbbell Tricep Kickback</td>
+                <td>3</td>
+                <td>8-12</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-30 w3-center w3-black">  
+    <h5 class="w3-padding-30 w3-large">“If you don’t find the time, if you don’t do the work, you don’t get the results.” </h5> 
+    <h5 class="w3-padding-30 w3-large">– Arnold Schwarzenegger</h5>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
