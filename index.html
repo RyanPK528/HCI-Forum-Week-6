@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Health & Fitness Tracker</title>
+<title>Fit-Life Dashboard</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -21,54 +21,106 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Dashboard</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tracker</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Workouts</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Health News</a>
+    <a href="tracker.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Tracker</a>
+    <a href="workout.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Workouts</a>
+    <a href="leaderboard.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Leaderboard</a>
   </div>
 
   <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Tracker</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Workouts</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Health News</a>
+    <a href="tracker.html" class="w3-bar-item w3-button w3-padding-large">Tracker</a>
+    <a href="workout.html" class="w3-bar-item w3-button w3-padding-large">Workouts</a>
+    <a href="leaderboard.html" class="w3-bar-item w3-button w3-padding-large">Leaderboard</a>
   </div>
 </div>
 
 <!-- Header -->
 <header class="w3-container w3-green w3-center" style="background-image: url('https://a.storyblok.com/f/101818/2000x1000/e2e7ee46af/why-iaq-is-the-new-office-gym-perk-delos.jpg'); background-repeat: no-repeat; background-size: cover; padding:128px 16px" >
-  <h1 class="w3-margin w3-jumbo">Want To Be Healthy?</h1>
-  <p class="w3-xlarge">Create an account so we can help you!</p>
-  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+    <div class="container" style="width: 50%; text-align: center; margin: auto; background-color: rgba(0, 0, 0, 0.5);">
+        <h1 class="w3-margin w3-jumbo">Fit-Life</h1>
+        <p class="w3-xlarge">Want To Be Healthy? Create an account so we can help you!</p>
+    </div>
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
 </header>
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-twothird">
-      <h1>Health Goals</h1>
-      <ol class="w3-ol w3-hoverable w3-large">
-        <li> Weight: - </li>
-        <li> Body Fat: - </li>
-      </ol>
-
-    </div>
-
-    <div class="w3-third w3-center">
+    <div class="w3-content">
+        <h1>Health Goals</h1>
+        <h5 class="w3-padding-32 w3-large">These are your desired health goals that you have set for yourself:</h5>
       
+        <ul class="w3-ul w3-card-4">
+            <li class="w3-bar">
+                <span class="w3-bar-item w3-white w3-xlarge w3-right"></span>
+                <img src="https://cdn-icons-png.flaticon.com/512/198/198077.png" class="w3-bar-item" style="width:85px">
+                <div class="w3-bar-item">
+                    <span class="w3-large">Desired Weight</span><br>
+                    <span>"Somewhere around 65 to 70 kg"</span>
+                </div>
+            </li>
+
+            <li class="w3-bar">
+                <span class="w3-bar-item w3-white w3-xlarge w3-right"></span>
+                <img src="https://www.clipartmax.com/png/full/416-4162853_the-body-body-bottle-icon-human-body-icon-png.png" class="w3-bar-item" style="width:85px">
+                <div class="w3-bar-item">
+                    <span class="w3-large">Desired Physique</span><br>
+                    <span>"Slim and lean but with a bit of muscles"</span>
+                </div>
+            </li>
+
+            <li class="w3-bar">
+                <span class="w3-bar-item w3-white w3-xlarge w3-right"></span>
+                <img src="https://p7.hiclipart.com/preview/116/858/443/computer-icons-meal-food-meal-icon.jpg" class="w3-bar-item w3-circle" style="width:85px">
+                <div class="w3-bar-item">
+                    <span class="w3-large">Daily Diet</span><br>
+                    <span>"A balanced diet for nutrients"</span>
+                </div>
+            </li>
+        </ul>
     </div>
-  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container w3-light-grey">
+    <div class="w3-content">
+        <h1 style="text-align: right;">Health & Fitness News</h1>
+        <h5 class="w3-padding-32 w3-large" style="text-align: right;">Keep up with the latest news regarding a healthy lifestyle among the Fit-Life community</h5>
+      
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-third">
+              <div class="w3-card">
+                <img src="https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/body-types.jpg?itok=ybsGppi-" style="width:100%">
+                <div class="w3-container">
+                    <a href="https://www.muscleandstrength.com/articles/body-types-ectomorph-mesomorph-endomorph.html"><h5>Your Body Type - Ectomorph, Mesomorph or Endomorph?</h5></a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="w3-third">
+              <div class="w3-card">
+                <img src="https://cdn.muscleandstrength.com/sites/default/files/fit_man_pouring_protein_powder_at_the_gym.jpg" style="width:100%">
+                <div class="w3-container">
+                    <a href="https://www.muscleandstrength.com/articles/7-nutrition-mistakes-to-avoid"><h5>7 Beginner Nutrition Mistakes to Avoid</h5></a>
+                </div>
+              </div>
+            </div>
+          
+            <div class="w3-third">
+              <div class="w3-card">
+                <img src="https://cdn.muscleandstrength.com/sites/default/files/styles/800x500/public/fit-man-doing-abdominal-work-in-his-living-room.jpg?itok=oTti_ih3" style="width:100%">
+                <div class="w3-container">
+                    <a href="https://www.muscleandstrength.com/articles/home-gym-remedies"><h5>6 Home Gym Workout Solutions</h5></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
+<footer class="w3-container w3-padding-30 w3-center w3-black">  
+    <h5 class="w3-padding-30 w3-large">“The body achieves what the mind believes.” 
+    <h5 class="w3-padding-30 w3-large">– Napoleon Hill</h5>
 </footer>
 
 <script>
